@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de la Gestalt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Leyes de la Gestalt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#proximidad">Proximidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#semejanza">Semejanza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#continuidad">Continuidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cierre">Cierre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#figura">Figura-fondo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#orden">Prägnanz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#region">Región común</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destino">Destino común</a></li>
+                </ul>
+                <div id="themeToggle" class="ms-3 form-check form-switch d-flex align-items-center gap-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                </div>
+                <i id="themeIcon" class="bi bi-moon-fill fs-5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero d-flex align-items-center text-center text-white parallax-section">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="position-relative z-2">
+                <h1 class="display-4 fw-bold">Leyes de la Gestalt en Diseño Web</h1>
+                <p class="lead">Cómo percibimos patrones y por qué impacta en la interfaz</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="text-center">
+
+        <section id="proximidad" class="pt-3 min-h-450">
+            <div class="container py-5 responsive-width">
+                <h2>Proximidad</h2>
+                <p>Tendemos a percibir como un grupo los elementos que están cerca entre sí. La mente asocia la cercanía
+                    espacial con relación o pertenencia, aunque los objetos sean iguales en forma o color.</p>
+                <div class="d-flex justify-content-center gap-5 mt-4">
+                    <div class="dot-group">
+                        <span class="dot bg-secondary mx-1"></span><span class="dot bg-dark mx-1"></span>
+                    </div>
+                    <div class="dot-group">
+                        <span class="dot mx-1 bg-secondary"></span><span class="dot bg-dark mx-1"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="semejanza" class="pt-3 bg-light text-start min-h-450">
+            <div class="container py-5 responsive-width">
+                <h2>Semejanza</h2>
+                <p>Los elementos similares en forma, tamaño o color se perciben como parte de un mismo conjunto. La
+                    semejanza visual crea vínculos mentales entre objetos.</p>
+                <div class="d-flex justify-content-center gap-3 mt-4 text-white text-center fw-bold">
+                    <div class="shape bg-dark">A</div>
+                    <div class="shape bg-dark">A</div>
+                    <div class="shape bg-dark">A</div>
+                    <div class="shape bg-secondary">B</div>
+                    <div class="shape bg-secondary">B</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="continuidad" class="pt-3 min-h-450 parallax-section">
+            <div class="container py-5 w-50 text-white">
+                <h2>Continuidad</h2>
+                <p>El ojo prefiere seguir líneas o trayectorias suaves y continuas antes que cambios bruscos. Percibimos
+                    una
+                    línea fluida incluso si está interrumpida.</p>
+                <div class="d-flex justify-content-center">
+                    <svg width="300" height="100">
+                        <path d="M10 60 Q150 -20 290 60" stroke="white" stroke-width="5" fill="none" />
+                        <circle cx="150" cy="60" r="10" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="cierre" class="pt-3 min-h-450">
+            <div class="container py-5 responsive-width">
+                <h2>Cierre</h2>
+                <p>Nuestro cerebro tiende a completar formas incompletas para ver figuras coherentes. No necesitamos
+                    todos los bordes para reconocer un objeto.</p>
+                <div class="closure-example mx-auto"></div>
+            </div>
+        </section>
+
+        <section id="figura" class="pt-3 bg-light text-start min-h-450">
+            <div class="container py-5 responsive-width">
+                <h2>Figura-fondo</h2>
+                <p>La mente separa los objetos (figura) del espacio que los rodea (fondo). Según el contraste o la
+                    disposición, algo puede verse como figura o fondo.</p>
+                <div class="mx-auto mt-4 position-relative figura">
+                    <div class="fondo bg-dark position-absolute">
+                    </div>
+                    <div class="centro bg-light position-absolute"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orden" class="pt-3 min-h-450">
+            <div class="container py-5 responsive-width">
+                <h2>Simetría y Orden (Prägnanz)</h2>
+                <p>El cerebro busca interpretaciones simples, equilibradas y estables. Las formas simétricas o bien
+                    organizadas se perciben más fácilmente y se recuerdan mejor.</p>
+                <div class="d-flex justify-content-center gap-4 mt-4">
+                    <div class="shape bg-secondary"></div>
+                    <div class="shape bg-secondary"></div>
+                    <div class="shape bg-secondary"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="region" class="pt-3 min-h-450 parallax-section">
+            <div class="container py-5 responsive-width text-white">
+                <h2>Región común</h2>
+                <p>Los elementos dentro de una misma zona delimitada se perciben como pertenecientes al mismo grupo,
+                    incluso
+                    si están separados por distancia.</p>
+                <div class="display-inline-block p-3 region">
+                    <span class="dot bg-white mx-1"></span>
+                    <span class="dot bg-white mx-1"></span>
+                    <span class="dot bg-white mx-1"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="destino" class="pt-3 min-h-450">
+            <div class="conatiner">
+                <h2>Destino común</h2>
+                <p>Los elementos que se mueven o apuntan en la misma dirección se perciben como relacionados. El
+                    movimiento
+                    compartido crea agrupación visual instantánea.</p>
+                <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+                    <svg width="80" height="60">
+                        <polygon points="10,30 90,10 90,50" fill="black" />
+                    </svg>
+                    <svg width="80" height="60">
+                        <polygon points="10,30 90,10 90,50" fill="black" />
+                    </svg>
+                    <svg width="80" height="60">
+                        <polygon points="10,30 90,10 90,50" fill="black" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4 bg-dark text-center text-white">
+        <div class="container">
+            &copy; 2025 - Proyecto Gestalt Bootstrap | Alizon Rosales - 2 DAW
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
